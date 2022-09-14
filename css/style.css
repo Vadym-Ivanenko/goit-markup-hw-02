@@ -1,8 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #212121;
 }
 
-/* ----------------------------------HEADER -------------------------------------*/
+/* ----------------------------HEADER ---------------------------------*/
 .head {
     font-style: normal;
     font-weight: 500;
@@ -12,7 +13,7 @@ body {
 }
 
 .logo {
-    color: #000000;
+    color: inherit;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -34,7 +35,7 @@ body {
 }
 
 .nav-link {
-    color: #000000;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -68,11 +69,19 @@ body {
 }
 
 .hero-btn {
-    background-color: #2196F3;
+    font-family: 'Roboto';
+    background: #F5F4FA;
     font-weight: 700;
-    font-size: 1.87;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 1.87;
     letter-spacing: 0.06em;
+    color: inherit;
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #2196F3;
     color: #FFFFFF;
 }
 
@@ -83,7 +92,6 @@ body {
 }
 
 .benefits-caption {
-    color: #212121;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -93,7 +101,6 @@ body {
 
 .benefits-descr {
     color: #757575;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -101,7 +108,6 @@ body {
 
 /* -----------------------OCCUPATION------------------- */
 .title {
-    color: #212121;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -118,7 +124,6 @@ body {
 }
 
 .team-caption {
-    color: #212121;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -127,7 +132,6 @@ body {
 
 .team-descr {
     color: #757575;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
@@ -167,11 +171,19 @@ body {
 }
 
 .portfolio-btn {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: inherit;
+    cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background: #2196F3;
+    color: #FFFFFF;
 }
 
 .portfolio-file {
@@ -183,11 +195,9 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
 }
 
 .portfolio-descr {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
