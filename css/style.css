@@ -1,11 +1,11 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
 :root {
     --main-color: #212121;
     --second-color: #2196F3;
     --second-font: 'Raleway', sans-serif;
-}
-
-body {
-    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 .list {
@@ -17,6 +17,29 @@ body {
     text-decoration: none;
 }
 
+.link:hover,
+.link:focus {
+    color: var(--second-color);
+}
+
+.btn {
+    background: #F5F4FA;
+    color: inherit;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #2196F3;
+    color: #FFFFFF;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
 
 /* ----------------------------HEADER ---------------------------------*/
 .header {
@@ -27,8 +50,8 @@ body {
 }
 
 .logo {
-    color: --main-color;
-    font-family: --second-font;
+    color: var(--main-color);
+    font-family: var(--second-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -37,36 +60,21 @@ body {
 }
 
 .logo:focus {
-    color: #2196F3
+    color: var(--second-color)
 }
 
 .logo>span {
-    color: #2196F3;
+    color: var(--second-color)
 }
 
-.nav-list {
-    list-style: none;
+
+.header-nav-link {
+    color: var(--main-color);
 }
 
-.nav-link {
-    color: inherit;
-    text-decoration: none;
-}
 
-.nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-    color: #2196F3;
-}
-
-.contact-list {
-    list-style: none;
-}
-
-.contact-link {
+.header-contact-link {
     color: #757575;
-    text-decoration: none;
 }
 
 /*-------------------------------- HERO--------------------------- */
@@ -77,33 +85,21 @@ body {
 .hero-title {
     color: #FFFFFF;
     font-weight: 900;
-    font-size: 1.36;
-    line-height: 60px;
+    font-size: 44px;
+    line-height: 1.36;
     text-transform: uppercase;
 }
 
 .hero-btn {
-    font-family: 'Roboto';
-    background: #F5F4FA;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: inherit;
-    cursor: pointer;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    background: #2196F3;
-    color: #FFFFFF;
-}
 
 /* ---------------------------BENEFITS---------------------------- */
-
-.benefits-list {
-    list-style: none;
-}
 
 .benefits-caption {
     font-weight: 700;
@@ -128,15 +124,8 @@ body {
     letter-spacing: 0.03em;
 }
 
-.occupation-list {
-    list-style: none;
-}
 
 /* -------------------------TEAM-------------------------- */
-.team-list {
-    list-style: none;
-}
-
 .team-caption {
     font-weight: 500;
     font-size: 16px;
@@ -156,14 +145,6 @@ body {
     background-color: #2F303A;
 }
 
-.footer-list {
-    list-style: none;
-}
-
-.footer-item {
-    font-style: normal;
-}
-
 .footer-adress {
     color: #FFFFFF;
     font-weight: 400;
@@ -171,6 +152,12 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    font-style: normal;
+}
+
+.footer-contact-link {
+    color: #757575;
+
 }
 
 .footer-adress:hover,
