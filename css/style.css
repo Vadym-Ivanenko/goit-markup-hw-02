@@ -5,6 +5,7 @@ body {
 :root {
     --main-color: #212121;
     --second-color: #2196F3;
+    --third-color: #757575;
     --second-font: 'Raleway', sans-serif;
 }
 
@@ -30,7 +31,7 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background: #2196F3;
+    background: var(--second-color);
     color: #FFFFFF;
 }
 
@@ -60,11 +61,11 @@ body {
 }
 
 .logo:focus {
-    color: var(--second-color)
+    color: var(--second-color);
 }
 
 .logo>span {
-    color: var(--second-color)
+    color: #2196F3;
 }
 
 
@@ -74,7 +75,7 @@ body {
 
 
 .header-contact-link {
-    color: #757575;
+    color: var(--third-color)
 }
 
 /*-------------------------------- HERO--------------------------- */
@@ -87,11 +88,12 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .hero-btn {
-    font-family: inherit;
+    font-family: var(--second-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -110,20 +112,13 @@ body {
 }
 
 .benefits-descr {
-    color: #757575;
+    color: var(--third-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
 /* -----------------------OCCUPATION------------------- */
-.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-}
-
 
 /* -------------------------TEAM-------------------------- */
 .team-caption {
@@ -134,9 +129,9 @@ body {
 }
 
 .team-descr {
-    color: #757575;
+    color: var(--third-color);
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
 }
 
@@ -145,50 +140,35 @@ body {
     background-color: #2F303A;
 }
 
-.footer-adress {
+.footer-list {
+    font-style: normal;
+}
+
+.footer-address {
     color: #FFFFFF;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
-    font-style: normal;
 }
 
 .footer-contact-link {
-    color: #757575;
+    color: var(--third-color);
 
 }
 
-.footer-adress:hover,
-.footer-adress:focus {
-    color: #2196F3;
+.footer-address:hover,
+.footer-address:focus {
+    color: var(--second-color);
 }
 
 /*----------------- PORTFOLIO--------------------- */
-
-.portfolio-item {
-    list-style: none;
-}
-
 .portfolio-btn {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    color: inherit;
-    cursor: pointer;
-}
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-    background: #2196F3;
-    color: #FFFFFF;
-}
-
-.portfolio-file {
-    list-style: none;
 }
 
 .portfolio-capture {
@@ -202,5 +182,5 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--third-color);
 }
