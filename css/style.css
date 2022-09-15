@@ -1,12 +1,13 @@
-body {
-    font-family: 'Roboto', 'Arial', sans-serif;
-}
-
 :root {
     --main-color: #212121;
     --second-color: #2196F3;
     --third-color: #757575;
     --second-font: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: var(--main-color);
 }
 
 .list {
