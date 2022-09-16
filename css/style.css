@@ -1,12 +1,17 @@
 :root {
     --main-color: #212121;
-    --second-color: #2196F3;
+    --second-color: #FFFFFF;
     --third-color: #757575;
+    --fourth-color: #000000;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196F3;
+    --background-btn: #F5F4FA;
+    --background: #2F303A;
     --second-font: 'Raleway', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--main-color);
 }
 
@@ -21,19 +26,19 @@ body {
 
 .link:hover,
 .link:focus {
-    color: var(--second-color);
+    color: var(--accent-color);
 }
 
 .btn {
-    background: #F5F4FA;
+    background: var(--background-btn);
     color: inherit;
     cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-    background: var(--second-color);
-    color: #FFFFFF;
+    background: var(--accent-color);
+    color: var(--second-color);
 }
 
 .title {
@@ -43,16 +48,23 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* ----------------------------HEADER ---------------------------------*/
-.header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
+/* ----------------------------HEADER ---------------------------------*/
+
 .logo {
-    color: var(--main-color);
+    color: var(--fourth-color);
     font-family: var(--second-font);
     font-weight: 700;
     font-size: 26px;
@@ -62,17 +74,37 @@ body {
 }
 
 .logo:focus {
-    color: var(--second-color);
+    color: var(--accent-color);
 }
 
 .logo>span {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
+.header-nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
 .header-nav-link {
-    color: var(--main-color);
+    color: inherit;
 }
+
+
+.header-nav-list .link.current {
+    color: var(--accent-color);
+}
+
+
+.header-contact-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
 
 
 .header-contact-link {
@@ -81,11 +113,11 @@ body {
 
 /*-------------------------------- HERO--------------------------- */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--background);
 }
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--second-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -94,7 +126,7 @@ body {
 }
 
 .hero-btn {
-    font-family: var(--second-font);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -138,7 +170,11 @@ body {
 
 /* -------------------------FOOTER -------------------------- */
 .footer {
-    background-color: #2F303A;
+    background: var(--background);
+}
+
+.footer-logo {
+    color: var(--second-color);
 }
 
 .footer-list {
@@ -146,7 +182,7 @@ body {
 }
 
 .footer-address {
-    color: #FFFFFF;
+    color: var(--second-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -154,13 +190,16 @@ body {
 }
 
 .footer-contact-link {
-    color: var(--third-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
 
 }
 
 .footer-address:hover,
 .footer-address:focus {
-    color: var(--second-color);
+    color: var(--accent-color);
 }
 
 /*----------------- PORTFOLIO--------------------- */
@@ -170,6 +209,11 @@ body {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+}
+
+.portfolio-unit-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .portfolio-capture {
