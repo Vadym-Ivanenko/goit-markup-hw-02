@@ -89,12 +89,12 @@ body {
 }
 
 .header-nav-link {
-    color: inherit;
+    color: var(--accent-color);
 }
 
 
 .header-nav-list .link.current {
-    color: var(--accent-color);
+    color: inherit;
 }
 
 
