@@ -7,6 +7,7 @@
     --accent-color: #2196F3;
     --background-btn: #F5F4FA;
     --background: #2F303A;
+    --background-main: #F5F5F5;
     --second-font: 'Raleway', sans-serif;
 }
 
@@ -30,9 +31,11 @@ body {
 }
 
 .btn {
-    background: var(--background-btn);
+    font-family: inherit;
     color: inherit;
     cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
 }
 
 .btn:hover,
@@ -62,6 +65,9 @@ body {
 }
 
 /* ----------------------------HEADER ---------------------------------*/
+.header {
+    background: var(--second-color);
+}
 
 .logo {
     color: var(--fourth-color);
@@ -81,23 +87,7 @@ body {
     color: var(--accent-color);
 }
 
-.header-nav-item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.header-nav-link {
-    color: var(--accent-color);
-}
-
-
-.header-nav-list .link.current {
-    color: inherit;
-}
-
-
+.header-nav-item,
 .header-contact-item {
     font-weight: 500;
     font-size: 14px;
@@ -105,6 +95,14 @@ body {
     letter-spacing: 0.02em;
 }
 
+.header-nav-link {
+    color: inherit;
+}
+
+
+.header-nav-list .link.current {
+    color: var(--accent-color);
+}
 
 
 .header-contact-link {
@@ -113,7 +111,7 @@ body {
 
 /*-------------------------------- HERO--------------------------- */
 .hero {
-    background-color: var(--background);
+    background: var(--background);
 }
 
 .hero-title {
@@ -126,7 +124,6 @@ body {
 }
 
 .hero-btn {
-    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -135,6 +132,9 @@ body {
 
 
 /* ---------------------------BENEFITS---------------------------- */
+.benefits {
+    background: var(--background-main);
+}
 
 .benefits-caption {
     font-weight: 700;
@@ -152,8 +152,19 @@ body {
 }
 
 /* -----------------------OCCUPATION------------------- */
+.occupation {
+    background: var(--background-main);
+}
 
 /* -------------------------TEAM-------------------------- */
+.team {
+    background: var(--background-main);
+}
+
+.team {
+    background: var(--second-color);
+}
+
 .team-caption {
     font-weight: 500;
     font-size: 16px;
@@ -203,12 +214,19 @@ body {
 }
 
 /*----------------- PORTFOLIO--------------------- */
+.portfolio {
+    background: var(--background-main);
+}
+
 .portfolio-btn {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+}
+
+.portfolio-unit {
+    background: var(--second-color);
 }
 
 .portfolio-unit-link {
